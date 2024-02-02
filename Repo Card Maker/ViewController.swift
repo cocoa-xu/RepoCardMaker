@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import UniformTypeIdentifiers
 
 class ViewController: NSViewController {
   @IBOutlet weak var templateView: RCGTemplateView!
