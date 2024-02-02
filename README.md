@@ -1,4 +1,4 @@
-<h1>img src="https://github.com/cocoa-xu/RepoCardMaker/raw/main/assets/repository-open-graph.png" alt="Logo"></h1>
+<h1><img src="https://github.com/cocoa-xu/RepoCardMaker/raw/main/assets/repository-open-graph.png" alt="Logo"></h1>
 
 Self-use tool that creates Repo Cards for GitHub.
 
