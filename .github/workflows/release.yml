@@ -66,7 +66,7 @@ jobs:
           brew install graphicsmagick imagemagick
           npm install --global create-dmg
           create-dmg 'dist/RepoCardMaker.app' dist
-          mv "$(find ./dist -type file -name '*.dmg')" "./dist/RepoCardMaker.dmg"
+          mv "$(find ./dist -type file -name '*.dmg')" "./dist/RepoCardMaker-Universal.dmg"
 
       - name: Notarize app
         env:
@@ -78,8 +78,8 @@ jobs:
             --team-id "$TEAM_ID" \
             --apple-id "$APPLE_ID" \
             --password "$NOTARY_PASSWORD" \
-            --wait "./dist/RepoCardMaker.dmg"
-          xcrun stapler staple "./dist/RepoCardMaker.dmg"
+            --wait "./dist/RepoCardMaker-Universal.dmg"
+          xcrun stapler staple "./dist/RepoCardMaker-Universal.dmg"
 
       - name: Upload release
         uses: softprops/action-gh-release@v1
