@@ -50,14 +50,14 @@ jobs:
         run: |
           xcodebuild \
             archive \
-            -project "Repo Card Maker.xcodeproj/" \
-            -scheme "Repo Card Maker" \
+            -project "RepoCardMaker.xcodeproj/" \
+            -scheme "RepoCardMaker" \
             -destination "generic/platform=macOS" \
-            -archivePath "dist/Repo Card Maker.xcarchive"
+            -archivePath "dist/RepoCardMaker.xcarchive"
           xcodebuild \
             -exportArchive \
-            -archivePath "dist/Repo Card Maker.xcarchive" \
-            -exportOptionsPlist "Repo Card Maker/ExportOptions.plist" \
+            -archivePath "dist/RepoCardMaker.xcarchive" \
+            -exportOptionsPlist "RepoCardMaker/ExportOptions.plist" \
             -exportPath dist/ \
             -allowProvisioningUpdates
 
@@ -65,8 +65,8 @@ jobs:
         run: |
           brew install graphicsmagick imagemagick
           npm install --global create-dmg
-          create-dmg 'dist/Repo Card Maker.app' dist
-          mv "$(find ./dist -type file -name '*.dmg')" "./dist/Repo Card Maker.dmg"
+          create-dmg 'dist/RepoCardMaker.app' dist
+          mv "$(find ./dist -type file -name '*.dmg')" "./dist/RepoCardMaker.dmg"
 
       - name: Notarize app
         env:
@@ -78,8 +78,8 @@ jobs:
             --team-id "$TEAM_ID" \
             --apple-id "$APPLE_ID" \
             --password "$NOTARY_PASSWORD" \
-            --wait "./dist/Repo Card Maker.dmg"
-          xcrun stapler staple "./dist/Repo Card Maker.dmg"
+            --wait "./dist/RepoCardMaker.dmg"
+          xcrun stapler staple "./dist/RepoCardMaker.dmg"
 
       - name: Upload release
         uses: softprops/action-gh-release@v1
