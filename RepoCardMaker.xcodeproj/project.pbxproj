@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC3585962B6C0542003B2E60 /* Repo Card Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Repo Card Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3585962B6C0542003B2E60 /* RepoCardMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoCardMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3585992B6C0542003B2E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC35859B2B6C0542003B2E60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC35859D2B6C0543003B2E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		CC35858D2B6C0542003B2E60 = {
 			isa = PBXGroup;
 			children = (
-				CC3585982B6C0542003B2E60 /* Repo Card Maker */,
+				CC3585982B6C0542003B2E60 /* RepoCardMaker */,
 				CC3585972B6C0542003B2E60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,12 +47,12 @@
 		CC3585972B6C0542003B2E60 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC3585962B6C0542003B2E60 /* Repo Card Maker.app */,
+				CC3585962B6C0542003B2E60 /* RepoCardMaker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC3585982B6C0542003B2E60 /* Repo Card Maker */ = {
+		CC3585982B6C0542003B2E60 /* RepoCardMaker */ = {
 			isa = PBXGroup;
 			children = (
 				CC3585AA2B6C1CBD003B2E60 /* Repo-Card-Maker-Info.plist */,
@@ -63,15 +63,15 @@
 				CC3585A22B6C0543003B2E60 /* Repo_Card_Maker.entitlements */,
 				CC3585AB2B6C1E74003B2E60 /* FiraCodeNerdFontMono.ttf */,
 			);
-			path = "Repo Card Maker";
+			path = RepoCardMaker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC3585952B6C0542003B2E60 /* Repo Card Maker */ = {
+		CC3585952B6C0542003B2E60 /* RepoCardMaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC3585A52B6C0543003B2E60 /* Build configuration list for PBXNativeTarget "Repo Card Maker" */;
+			buildConfigurationList = CC3585A52B6C0543003B2E60 /* Build configuration list for PBXNativeTarget "RepoCardMaker" */;
 			buildPhases = (
 				CC3585922B6C0542003B2E60 /* Sources */,
 				CC3585932B6C0542003B2E60 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = "Repo Card Maker";
+			name = RepoCardMaker;
 			productName = "Repo Card Generator";
-			productReference = CC3585962B6C0542003B2E60 /* Repo Card Maker.app */;
+			productReference = CC3585962B6C0542003B2E60 /* RepoCardMaker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC3585912B6C0542003B2E60 /* Build configuration list for PBXProject "Repo Card Maker" */;
+			buildConfigurationList = CC3585912B6C0542003B2E60 /* Build configuration list for PBXProject "RepoCardMaker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC3585952B6C0542003B2E60 /* Repo Card Maker */,
+				CC3585952B6C0542003B2E60 /* RepoCardMaker */,
 			);
 		};
 /* End PBXProject section */
@@ -279,7 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Repo Card Maker/Repo_Card_Maker.entitlements";
+				CODE_SIGN_ENTITLEMENTS = RepoCardMaker/Repo_Card_Maker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -287,6 +287,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Repo-Card-Maker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Repo Card Maker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2024 Cocoa Xu";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -309,7 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Repo Card Maker/Repo_Card_Maker.entitlements";
+				CODE_SIGN_ENTITLEMENTS = RepoCardMaker/Repo_Card_Maker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -317,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Repo-Card-Maker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Repo Card Maker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright (c) 2024 Cocoa Xu";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -337,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC3585912B6C0542003B2E60 /* Build configuration list for PBXProject "Repo Card Maker" */ = {
+		CC3585912B6C0542003B2E60 /* Build configuration list for PBXProject "RepoCardMaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC3585A32B6C0543003B2E60 /* Debug */,
@@ -346,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC3585A52B6C0543003B2E60 /* Build configuration list for PBXNativeTarget "Repo Card Maker" */ = {
+		CC3585A52B6C0543003B2E60 /* Build configuration list for PBXNativeTarget "RepoCardMaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC3585A62B6C0543003B2E60 /* Debug */,
